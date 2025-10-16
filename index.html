@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission Mars</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="nav-bar">
+        <div class="container">
+          <div class="nav-wrapper d-flex al-center jc-between">
+            <!-- logo -->
+            <a href="#">
+              <figure class="d-flex al-center">
+                <img src="images/logo.png" alt="logo" />
+                <figcaption>Mission Mars</figcaption>
+              </figure>
+            </a>
+
+            <!-- menus -->
+            <div class="nav-menu">
+              <ul class="d-flex al-center">
+                <li><a href="#">About Mars</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="#">Virtual Tour</a></li>
+                <li><a href="#">Colonization</a></li>
+                <li><a href="#">Join Us</a></li>
+              </ul>
+            </div>
+
+            <!-- button -->
+            <div class="nav-btn">
+              <a href="#">Start Journey</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner section -->
+    <section class="banner" style="background-image: url('images/banner.png')">
+      <div class="banner-container">
+        <div class="banner-wrapper d-flex al-center jc-center">
+          <div class="banner-content d-flex al-center jc-center">
+            <h1 data-aos="fade-right" data-aos-duration="600">
+              WELCOME TO MARS
+            </h1>
+            <p data-aos="fade-left" data-aos-duration="600">
+              Discover the Red Planet like never before. Explore the mysteries
+              of our neighboring world and prepare for humanity's next giant
+              leap.
+            </p>
+            <div data-aos="zoom-in" data-aos-duration="600">
+              <a href="#">Start Your Journey</a>
+            </div>
+            <span
+              class="scroll-down"
+              aria-label="scroll-down"
+              data-aos="zoom-out-down"
+              data-aos-duration="600"
+              ><i class="fa-solid fa-arrow-down"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- main section -->
+    <main>
+      <!-- about -->
+      <section class="about">
+        <div class="container">
+          <div class="about-wrapper d-flex al-center">
+            <!-- heading part -->
+            <div class="about-content d-flex al-center">
+              <h2>ABOUT <span>MARS</span></h2>
+              <p>
+                The fourth planet from the Sun and Earth's closest neighbor,
+                Mars has captivated human imagination for centuries.
+              </p>
+            </div>
+            <!-- main about content -->
+            <div class="main-about-content d-flex al-center">
+              <div class="left-about-part">
+                <figure>
+                  <img src="images/about.png" alt="" />
+                </figure>
+              </div>
+              <div class="right-about-part">
+                <h3>The Red Planet</h3>
+                <ul>
+                  <li>
+                    <p>
+                      Mars is often called the "Red Planet" due to the iron
+                      oxide prevalent on its surface, giving it a reddish
+                      appearance. Mars is a terrestrial planet with a thin
+                      atmosphere, with surface features reminiscent of both the
+                      impact craters of the Moon and the valleys, deserts and
+                      polar ice caps of Earth.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Mars has two moons, Phobos and Deimos, which are small and
+                      irregularly shaped. These may be captured asteroids
+                      similar to 5261 Eureka, a Mars trojan.
+                    </p>
+                  </li>
+                </ul>
+                <ul class="about-list d-flex al-center jc-between">
+                  <li class="about-card">
+                    <span>Distance from Sun</span>
+                    <strong>227.9M km</strong>
+                  </li>
+                  <li class="about-card">
+                    <span>Gravity</span>
+                    <strong>3.72 m/s²</strong>
+                  </li>
+                  <li class="about-card">
+                    <span>Martian Day</span>
+                    <strong>24.6 Hours</strong>
+                  </li>
+                  <li class="about-card">
+                    <span>Martian Year</span>
+                    <strong>687 Days</strong>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- bottom about content -->
+            <div class="bottom-about-content">
+              <ul class="d-flex al-center">
+                <li>
+                  <figure>
+                    <img src="images/about-1.png" alt="about-1" />
+                  </figure>
+                  <div class="bottom-content">
+                    <h3>Temperature</h3>
+                    <p>
+                      Average -60°C (-80°F), with extremes from -125°C (-195°F)
+                      to 20°C (70°F) at the equator during summer.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/about-2.png" alt="about-2" />
+                  </figure>
+                  <div class="bottom-content">
+                    <h3>Atmosphere</h3>
+                    <p>
+                      Thin atmosphere composed of 95% carbon dioxide, 3%
+                      nitrogen, 1.6% argon, and traces of oxygen and water.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/about-3.png" alt="about-3" />
+                  </figure>
+                  <div class="bottom-content">
+                    <h3>Geography</h3>
+                    <p>
+                      Home to Olympus Mons, the largest volcano in the solar
+                      system, and Valles Marineris, a vast canyon system.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/about-4.png" alt="about-4" />
+                  </figure>
+                  <div class="bottom-content">
+                    <h3>Water</h3>
+                    <p>
+                      Evidence suggests Mars once had significant liquid water
+                      on its surface, with potential subsurface water ice today.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- timeline -->
+      <section class="timeline">
+        <div class="container">
+          <div class="timeline-wrapper d-flex al-center">
+            <div class="timeline-content">
+              <h2>MARS <span>MISSIONS</span> TIMELINE</h2>
+              <p>
+                Humanity's journey to understand and explore the Red Planet
+                spans decades of scientific achievement.
+              </p>
+            </div>
+            <!-- first ul -->
+            <div class="first-list">
+              <ul class="d-flex">
+                <li>
+                  <span>1965</span>
+                  <h3>Mariner 4</h3>
+                  <p>
+                    First successful Mars flyby, capturing the first close-up
+                    images of another planet from deep space.
+                  </p>
+                </li>
+                <li>
+                  <span>1976</span>
+                  <h3>Viking 1 & 2</h3>
+                  <p>
+                    First successful Mars landers, conducting experiments to
+                    search for evidence of life.
+                  </p>
+                </li>
+                <li>
+                  <span>1997</span>
+                  <h3>Mars Pathfinder</h3>
+                  <p>
+                    Delivered the Sojourner rover, the first wheeled vehicle to
+                    operate on another planet.
+                  </p>
+                </li>
+                <li>
+                  <span>2004</span>
+                  <h3>Spirit & Opportunity</h3>
+                  <p>
+                    Twin rovers that significantly expanded our understanding of
+                    Mars' geology and water history.
+                  </p>
+                </li>
+                <li>
+                  <span>2012</span>
+                  <h3>Curiosity Rover</h3>
+                  <p>
+                    Car-sized rover equipped with laboratory instruments to
+                    analyze Martian soil and atmosphere.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- second-list -->
+            <div class="second-list">
+              <h3>Future Mars Exploration</h3>
+              <ul class="d-flex">
+                <li>
+                  <figure>
+                    <img src="images/timeline-1.png" alt="timeline-1" />
+                  </figure>
+                  <h3>Advanced Propulsion</h3>
+                  <p>
+                    Development of nuclear thermal and plasma propulsion to
+                    reduce travel time to Mars from months to weeks.
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/timeline-2.png" alt="timeline-2" />
+                  </figure>
+                  <h3>Habitat Construction</h3>
+                  <p>
+                    Research into 3D-printed habitats using Martian regolith and
+                    underground structures to shield from radiation.
+                  </p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/timeline-3.png" alt="timeline-3" />
+                  </figure>
+                  <h3>Terraforming Studies</h3>
+                  <p>
+                    Theoretical research into the possibility of transforming
+                    Mars' environment to be more Earth-like over centuries.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- virtual tour -->
+      <section class="virtual-tour">
+        <div class="container">
+          <div class="virtual-tour-wrapper">
+            <div class="virtual-content d-flex al-center">
+              <h2>VIRTUAL <span>TOUR</span></h2>
+              <p>
+                Explore the most fascinating locations on the Martian surface
+                through our interactive virtual tour.
+              </p>
+            </div>
+            <!-- map -->
+            <div class="virtual-map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.0529218857!2d-73.89760053779722!3d40.68535813971694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c370da54ab1%3A0x891a969d1e5d168b!2sThe%20Evergreens%20Cemetery!5e1!3m2!1sen!2sin!4v1760507069582!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+              <div class="map-btn">
+                <a href="#">Launch Interactive Map</a>
+              </div>
+            </div>
+            <!-- virtual-place -->
+            <div class="virtual-place">
+              <ul>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-1.png" alt="place-1" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Olympus Mons</h3>
+                    <p>
+                      The largest volcano in the solar system, standing nearly
+                      three times the height of Mount Everest with a base the
+                      size of Arizona.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-2.png" alt="place-2" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Valles Marineris</h3>
+                    <p>
+                      A vast system of canyons that runs along the Martian
+                      equator, stretching as long as the United States is wide.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-3.png" alt="place-3" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Martian Poles</h3>
+                    <p>
+                      The north and south poles of Mars feature ice caps made of
+                      water and carbon dioxide ice that grow and shrink with the
+                      seasons.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-4.png" alt="place-4" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Gale Crater</h3>
+                    <p>
+                      Landing site of the Curiosity rover, this ancient crater
+                      shows evidence of past lakes and streams on the Martian
+                      surface.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-5.png" alt="place-5" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Jezero Crater</h3>
+                    <p>
+                      Home to the Perseverance rover, this ancient lakebed
+                      contains a river delta that may preserve signs of past
+                      microbial life.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+                <li class="virtual-card">
+                  <figure>
+                    <img src="images/place-6.png" alt="place-6" />
+                  </figure>
+                  <div class="virtual-place-content">
+                    <h3>Phobos & Deimos</h3>
+                    <p>
+                      Mars' two small, irregularly shaped moons, likely captured
+                      asteroids that orbit close to the planet's surface.
+                    </p>
+                    <div><a href="#">Explore Location</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- bottom btn and text -->
+            <div class="virtual-place-bottom d-flex">
+              <div class="bottom-btn">
+                <a href="#">Experience VR Tour</a>
+              </div>
+              <p>Compatible with most VR headsets and desktop browsers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- making home-->
+      <section class="making-home">
+        <div class="container">
+          <div class="making-home-wrapper">
+            <div class="home-content">
+              <h2>MAKING <span>MARS</span> HOME</h2>
+              <p>
+                Our comprehensive plan for establishing the first permanent
+                human settlement on the Red Planet.
+              </p>
+            </div>
+            <div class="home-card">
+              <ul class="card-list d-flex">
+                <li class="card">
+                  <figure>
+                    <img src="images/home-1.png" alt="home-1" />
+                  </figure>
+                  <h3>Habitats</h3>
+                  <p>
+                    Modular, pressurized habitats with radiation shielding,
+                    utilizing both prefabricated components and 3D-printed
+                    structures using local materials.
+                  </p>
+                  <ul class="card-bottom-list">
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Underground construction for radiation protection</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Self-healing materials for micrometeorite impacts</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Expandable architecture for colony growth</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="card">
+                  <figure><img src="images/home-2.png" alt="home-2" /></figure>
+                  <h3>Agriculture</h3>
+                  <p>
+                    Sustainable food production systems using hydroponics,
+                    aeroponics, and controlled environment agriculture to
+                    provide fresh food for colonists.
+                  </p>
+                  <ul class="card-bottom-list">
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>LED lighting optimized for plant growth</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Closed-loop water and nutrient recycling</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Genetically optimized crops for Mars conditions</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="card">
+                  <figure><img src="images/home-3.png" alt="home-3" /></figure>
+                  <h3>Energy</h3>
+                  <p>
+                    Multi-source power generation combining solar arrays,
+                    nuclear fission, and advanced battery storage to ensure
+                    reliable energy in all conditions.
+                  </p>
+                  <ul class="card-bottom-list">
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Dust-resistant solar panel technology</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Small modular nuclear reactors</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Grid-scale solid-state battery storage</p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="card">
+                  <figure><img src="images/home-4.png" alt="home-4" /></figure>
+                  <h3>Transportation</h3>
+                  <p>
+                    A fleet of vehicles designed for the Martian environment,
+                    from pressurized rovers for long-distance exploration to
+                    autonomous drones for aerial surveys.
+                  </p>
+                  <ul class="card-bottom-list">
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Pressurized long-range exploration vehicles</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Autonomous construction and mining robots</p>
+                    </li>
+                    <li>
+                      <i class="fa-regular fa-circle-check"></i>
+                      <p>Specialized drones for Martian atmosphere</p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Colonization Timeline -->
+            <div class="colonization-timeline">
+              <h3 class="timeline-header">Colonization Timeline</h3>
+              <div class="colonization-timeline-list">
+                <ul>
+                  <li class="timeline-list">
+                    <h3>Phase 1: 2030-2035</h3>
+                    <ul class="timeline-bottom-list">
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>
+                          Initial robotic missions to establish infrastructure
+                        </p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Deployment of power generation systems</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>First crewed mission (temporary stay)</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Construction of initial habitat modules</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="timeline-list">
+                    <h3>Phase 2: 2035-2045</h3>
+                    <ul class="timeline-bottom-list">
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Establishment of permanent base</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Expansion of agricultural systems</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Development of in-situ resource utilization</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>First children born on Mars</p>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="timeline-list">
+                    <h3>Phase 3: 2045-2060</h3>
+                    <ul class="timeline-bottom-list">
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Self-sustaining colony of 1,000+ people</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Development of Martian industries</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Multiple settlement locations</p>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                        <p>Initial atmospheric modification experiments</p>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- join us -->
+      <section class="join-us">
+        <div class="container">
+          <div class="join-us-wrapper">
+            <div class="join-us-content d-flex">
+              <h2>JOIN THE <span>MISSION</span></h2>
+              <p>
+                Be part of humanity's greatest adventure as we take our first
+                steps toward becoming a multi-planetary species.
+              </p>
+            </div>
+            <div class="join-us-body d-flex">
+              <div class="body-left">
+                <h3>Subscribe for Updates</h3>
+                <p>
+                  Stay informed about the latest developments in our Mars
+                  mission planning, technology breakthroughs, and opportunities
+                  to get involved.
+                </p>
+                <form action="#">
+                  <label for="f_name">Full Name</label>
+                  <input
+                    type="text"
+                    id="f_name"
+                    class="f_name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                  <div class="option">
+                    <div class="option-list">
+                      <input
+                        type="radio"
+                        id="scienceResearch"
+                        name="scienceResearch"
+                      />
+                      <label for="scienceResearch">Science & Research</label>
+                    </div>
+                    <div class="option-list">
+                      <input type="radio" id="Engineering" name="Engineering" />
+                      <label for="Engineering">Engineering</label>
+                    </div>
+                    <div class="option-list">
+                      <input
+                        type="radio"
+                        id="Colonization"
+                        name="Colonization"
+                      />
+                      <label for="Colonization">Colonization</label>
+                    </div>
+                    <div class="option-list">
+                      <input type="radio" id="Education" name="Education" />
+                      <label for="Education">Education</label>
+                    </div>
+                  </div>
+
+                  <button type="submit">Subscribe Now</button>
+                </form>
+              </div>
+              <div class="body-right">
+                <div class="program">
+                  <h3>Community Programs</h3>
+                  <div class="program-content">
+                    <ul>
+                      <li>
+                        <figure>
+                          <img src="images/program-1.png" alt="program-1" />
+                        </figure>
+                        <figcaption>
+                          <h3>Mars Ambassador Program</h3>
+                          <p>
+                            Join our network of passionate advocates who help
+                            educate the public about Mars exploration and
+                            colonization.
+                          </p>
+                        </figcaption>
+                      </li>
+                      <li>
+                        <figure>
+                          <img src="images/program-2.png" alt="program-2" />
+                        </figure>
+                        <figcaption>
+                          <h3>Citizen Science Projects</h3>
+                          <p>
+                            Contribute to real Mars research by analyzing data,
+                            identifying surface features, or participating in
+                            simulation studies.
+                          </p>
+                        </figcaption>
+                      </li>
+                      <li>
+                        <figure>
+                          <img src="images/program-3.png" alt="program-3" />
+                        </figure>
+                        <figcaption>
+                          <h3>Mars Academy</h3>
+                          <p>
+                            Online courses covering everything from Martian
+                            geology to life support systems and colonization
+                            strategies.
+                          </p>
+                        </figcaption>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="career">
+                  <h3>Career Opportunities</h3>
+                  <p>
+                    We're building a diverse team of experts across multiple
+                    disciplines to make our Mars mission a reality.
+                  </p>
+                  <ul>
+                    <li>
+                      <span>Aerospace Engineers</span>
+                      <a href="#">Apply</a>
+                    </li>
+                    <li>
+                      <span>Life Support Specialists</span>
+                      <a href="#">Apply</a>
+                    </li>
+                    <li>
+                      <span>Martian Geologists</span>
+                      <a href="#">Apply</a>
+                    </li>
+                    <li>
+                      <span>Habitat Architects</span>
+                      <a href="#">Apply</a>
+                    </li>
+                  </ul>
+
+                  <div class="career-btn">
+                    <a href="#">View All Positions</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer-top d-flex">
+            <div class="box-1">
+              <figure>
+                <img src="images/footer-logo.png" alt="footer-logo" />
+              </figure>
+              <p>
+                Pioneering the future of human civilization on Mars through
+                innovation, collaboration, and the spirit of exploration.
+              </p>
+              <ul class="d-flex al-center">
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+              </ul>
+            </div>
+            <div class="box box-2">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Mission</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="box box-3">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">Mars Research Papers</a></li>
+                <li><a href="#">Educational Materials</a></li>
+                <li><a href="#">Mars in the Media</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="box box-4">
+              <h3>Contact</h3>
+              <ul>
+                <li>
+                  <figure>
+                    <img src="images/footer-1.png" alt="footer-1" />
+                  </figure>
+                  <p>123 Space Center Blvd, Houston, TX 77058, USA</p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/footer-2.png" alt="footer-2" />
+                  </figure>
+                  <p>info@missionmars.com</p>
+                </li>
+                <li>
+                  <figure>
+                    <img src="images/footer-3.png" alt="footer-3" />
+                  </figure>
+                  <p>+1 (800) MARS-123</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <span>© 2025 Mission Mars. All rights reserved.</span>
+            <ul class="d-flex al-center">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
