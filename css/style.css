@@ -1738,3 +1738,128 @@ li {
     }
   }
 }
+
+@media screen and (max-width: 480px) {
+  /* navbar */
+  .nav-wrapper a figure figcaption {
+    font-size: 15px;
+  }
+  .nav-btn {
+    padding: 5px 8px;
+  }
+  .nav-btn a {
+    font-size: 11px;
+  }
+  /* banner */
+  .banner-content p {
+    font-size: 13px;
+  }
+
+  /* about */
+  .about-wrapper .main-about-content .left-about-part figure img {
+    width: 80%;
+  }
+
+  .bottom-about-content ul li .bottom-content h3 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  /* virtual tour */
+  .virtual-map .map-btn a {
+    font-size: 12px;
+  }
+
+  .virtual-map .map-btn {
+    padding: 10px 15px;
+  }
+
+  /* making home */
+  .card h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+  .colonization-timeline-list ul li h3 {
+    font-size: 14px;
+  }
+  .timeline-bottom-list li p {
+    font-size: 12px;
+  }
+
+  /* join us */
+  .body-left h3 {
+    font-size: 16px;
+  }
+
+  /* making home */
+  .program h3 {
+    font-size: 16px;
+  }
+  .program-content ul li figcaption p {
+    font-size: 12px;
+  }
+  .program-content ul li figcaption h3 {
+    font-size: 13px;
+  }
+  .career h3 {
+    font-size: 16px;
+  }
+  .career p {
+    font-size: 12px;
+  }
+
+  /* footer */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .box h3 {
+    font-size: 14px;
+  }
+
+  .box ul li a {
+    font-size: 12px;
+  }
+
+  .box ul li p {
+    font-size: 12px;
+  }
+
+  .box-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .box-4 ul li {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-bottom ul li a {
+    font-size: 11px;
+  }
+}
+
+/* animation */
+@keyframes full-rotate {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
