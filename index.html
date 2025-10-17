@@ -21,12 +21,17 @@
         <div class="container">
           <div class="nav-wrapper d-flex al-center jc-between">
             <!-- logo -->
-            <a href="#">
-              <figure class="d-flex al-center">
-                <img src="images/logo.png" alt="logo" />
-                <figcaption>Mission Mars</figcaption>
-              </figure>
-            </a>
+            <div class="logo">
+              <a href="#">
+                <figure class="d-flex al-center">
+                  <img src="images/logo.png" alt="logo" />
+                  <figcaption>Mission Mars</figcaption>
+                </figure>
+              </a>
+              <div class="humbarger" id="humbarger">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
 
             <!-- menus -->
             <div class="nav-menu">
@@ -53,24 +58,44 @@
       <div class="banner-container">
         <div class="banner-wrapper d-flex al-center jc-center">
           <div class="banner-content d-flex al-center jc-center">
-            <h1 data-aos="fade-right" data-aos-duration="600">
+            <h1
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               WELCOME TO MARS
             </h1>
-            <p data-aos="fade-left" data-aos-duration="600">
+
+            <p
+              data-aos="fade-left"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               Discover the Red Planet like never before. Explore the mysteries
               of our neighboring world and prepare for humanity's next giant
               leap.
             </p>
-            <div data-aos="zoom-in" data-aos-duration="600">
+
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-back"
+            >
               <a href="#">Start Your Journey</a>
             </div>
+
             <span
               class="scroll-down"
               aria-label="scroll-down"
               data-aos="zoom-out-down"
-              data-aos-duration="600"
-              ><i class="fa-solid fa-arrow-down"></i
-            ></span>
+              data-aos-delay="600"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+            >
+              <i class="fa-solid fa-arrow-down"></i>
+            </span>
           </div>
         </div>
       </div>
@@ -79,28 +104,57 @@
     <!-- main section -->
     <main>
       <!-- about -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about-wrapper d-flex al-center">
             <!-- heading part -->
-            <div class="about-content d-flex al-center">
+            <div
+              class="about-content d-flex al-center"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               <h2>ABOUT <span>MARS</span></h2>
               <p>
                 The fourth planet from the Sun and Earth's closest neighbor,
                 Mars has captivated human imagination for centuries.
               </p>
             </div>
+
             <!-- main about content -->
-            <div class="main-about-content d-flex al-center">
-              <div class="left-about-part">
+            <div
+              class="main-about-content d-flex al-center"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
+              <div
+                class="left-about-part"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+                data-aos-delay="300"
+                data-aos-easing="ease-out-back"
+              >
                 <figure>
-                  <img src="images/about.png" alt="" class="full-rotate"/>
+                  <img
+                    src="images/about.png"
+                    alt="Mars illustration"
+                    class="full-rotate"
+                  />
                 </figure>
               </div>
-              <div class="right-about-part">
+
+              <div
+                class="right-about-part"
+                data-aos="fade-left"
+                data-aos-delay="400"
+                data-aos-duration="800"
+                data-aos-easing="ease-out-cubic"
+              >
                 <h3>The Red Planet</h3>
                 <ul>
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="500">
                     <p>
                       Mars is often called the "Red Planet" due to the iron
                       oxide prevalent on its surface, giving it a reddish
@@ -110,7 +164,7 @@
                       polar ice caps of Earth.
                     </p>
                   </li>
-                  <li>
+                  <li data-aos="fade-up" data-aos-delay="600">
                     <p>
                       Mars has two moons, Phobos and Deimos, which are small and
                       irregularly shaped. These may be captured asteroids
@@ -118,32 +172,60 @@
                     </p>
                   </li>
                 </ul>
+
                 <ul class="about-list d-flex al-center jc-between">
-                  <li class="about-card">
+                  <li
+                    class="about-card"
+                    data-aos="flip-left"
+                    data-aos-delay="700"
+                    data-aos-duration="800"
+                  >
                     <span>Distance from Sun</span>
                     <strong>227.9M km</strong>
                   </li>
-                  <li class="about-card">
+                  <li
+                    class="about-card"
+                    data-aos="flip-left"
+                    data-aos-delay="800"
+                    data-aos-duration="800"
+                  >
                     <span>Gravity</span>
                     <strong>3.72 m/s²</strong>
                   </li>
-                  <li class="about-card">
+                  <li
+                    class="about-card"
+                    data-aos="flip-left"
+                    data-aos-delay="900"
+                    data-aos-duration="800"
+                  >
                     <span>Martian Day</span>
                     <strong>24.6 Hours</strong>
                   </li>
-                  <li class="about-card">
+                  <li
+                    class="about-card"
+                    data-aos="flip-left"
+                    data-aos-delay="1000"
+                    data-aos-duration="800"
+                  >
                     <span>Martian Year</span>
                     <strong>687 Days</strong>
                   </li>
                 </ul>
               </div>
             </div>
+
             <!-- bottom about content -->
-            <div class="bottom-about-content">
+            <div
+              class="bottom-about-content"
+              data-aos="fade-up"
+              data-aos-delay="1200"
+              data-aos-duration="900"
+              data-aos-easing="ease-out-cubic"
+            >
               <ul class="d-flex al-center">
-                <li>
+                <li data-aos="fade-up" data-aos-delay="1300">
                   <figure>
-                    <img src="images/about-1.png" alt="about-1" />
+                    <img src="images/about-1.png" alt="Temperature" />
                   </figure>
                   <div class="bottom-content">
                     <h3>Temperature</h3>
@@ -153,9 +235,10 @@
                     </p>
                   </div>
                 </li>
-                <li>
+
+                <li data-aos="fade-up" data-aos-delay="1400">
                   <figure>
-                    <img src="images/about-2.png" alt="about-2" />
+                    <img src="images/about-2.png" alt="Atmosphere" />
                   </figure>
                   <div class="bottom-content">
                     <h3>Atmosphere</h3>
@@ -165,9 +248,10 @@
                     </p>
                   </div>
                 </li>
-                <li>
+
+                <li data-aos="fade-up" data-aos-delay="1500">
                   <figure>
-                    <img src="images/about-3.png" alt="about-3" />
+                    <img src="images/about-3.png" alt="Geography" />
                   </figure>
                   <div class="bottom-content">
                     <h3>Geography</h3>
@@ -177,9 +261,10 @@
                     </p>
                   </div>
                 </li>
-                <li>
+
+                <li data-aos="fade-up" data-aos-delay="1600">
                   <figure>
-                    <img src="images/about-4.png" alt="about-4" />
+                    <img src="images/about-4.png" alt="Water" />
                   </figure>
                   <div class="bottom-content">
                     <h3>Water</h3>
@@ -196,20 +281,21 @@
       </section>
 
       <!-- timeline -->
-      <section class="timeline">
+      <section class="timeline" id="timeline">
         <div class="container">
           <div class="timeline-wrapper d-flex al-center">
-            <div class="timeline-content">
+            <div class="timeline-content" data-aos="fade-down">
               <h2>MARS <span>MISSIONS</span> TIMELINE</h2>
               <p>
                 Humanity's journey to understand and explore the Red Planet
                 spans decades of scientific achievement.
               </p>
             </div>
+
             <!-- first ul -->
-            <div class="first-list">
+            <div class="first-list" data-aos="fade-up">
               <ul class="d-flex">
-                <li>
+                <li data-aos="fade-up" data-aos-delay="100">
                   <span>1965</span>
                   <h3>Mariner 4</h3>
                   <p>
@@ -217,7 +303,7 @@
                     images of another planet from deep space.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="200">
                   <span>1976</span>
                   <h3>Viking 1 & 2</h3>
                   <p>
@@ -225,7 +311,7 @@
                     search for evidence of life.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="300">
                   <span>1997</span>
                   <h3>Mars Pathfinder</h3>
                   <p>
@@ -233,7 +319,7 @@
                     operate on another planet.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="400">
                   <span>2004</span>
                   <h3>Spirit & Opportunity</h3>
                   <p>
@@ -241,7 +327,7 @@
                     Mars' geology and water history.
                   </p>
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="500">
                   <span>2012</span>
                   <h3>Curiosity Rover</h3>
                   <p>
@@ -251,13 +337,17 @@
                 </li>
               </ul>
             </div>
+
             <!-- second-list -->
-            <div class="second-list">
-              <h3>Future Mars Exploration</h3>
+            <div class="second-list" data-aos="fade-up" data-aos-delay="200">
+              <h3 data-aos="fade-down">Future Mars Exploration</h3>
               <ul class="d-flex">
-                <li>
+                <li data-aos="zoom-in" data-aos-delay="100">
                   <figure>
-                    <img src="images/timeline-1.png" alt="timeline-1" />
+                    <img
+                      src="images/timeline-1.png"
+                      alt="Advanced Propulsion"
+                    />
                   </figure>
                   <h3>Advanced Propulsion</h3>
                   <p>
@@ -265,9 +355,12 @@
                     reduce travel time to Mars from months to weeks.
                   </p>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-delay="200">
                   <figure>
-                    <img src="images/timeline-2.png" alt="timeline-2" />
+                    <img
+                      src="images/timeline-2.png"
+                      alt="Habitat Construction"
+                    />
                   </figure>
                   <h3>Habitat Construction</h3>
                   <p>
@@ -275,9 +368,12 @@
                     underground structures to shield from radiation.
                   </p>
                 </li>
-                <li>
+                <li data-aos="zoom-in" data-aos-delay="300">
                   <figure>
-                    <img src="images/timeline-3.png" alt="timeline-3" />
+                    <img
+                      src="images/timeline-3.png"
+                      alt="Terraforming Studies"
+                    />
                   </figure>
                   <h3>Terraforming Studies</h3>
                   <p>
@@ -292,18 +388,31 @@
       </section>
 
       <!-- virtual tour -->
-      <section class="virtual-tour">
+      <section class="virtual-tour" id="virtual-tour">
         <div class="container">
           <div class="virtual-tour-wrapper">
-            <div class="virtual-content d-flex al-center">
+            <!-- heading content -->
+            <div
+              class="virtual-content d-flex al-center"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               <h2>VIRTUAL <span>TOUR</span></h2>
               <p>
                 Explore the most fascinating locations on the Martian surface
                 through our interactive virtual tour.
               </p>
             </div>
+
             <!-- map -->
-            <div class="virtual-map">
+            <div
+              class="virtual-map"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              data-aos-duration="900"
+              data-aos-easing="ease-out-back"
+            >
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.0529218857!2d-73.89760053779722!3d40.68535813971694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c370da54ab1%3A0x891a969d1e5d168b!2sThe%20Evergreens%20Cemetery!5e1!3m2!1sen!2sin!4v1760507069582!5m2!1sen!2sin"
                 width="600"
@@ -317,10 +426,15 @@
                 <a href="#">Launch Interactive Map</a>
               </div>
             </div>
-            <!-- virtual-place -->
-            <div class="virtual-place">
+
+            <!-- virtual places -->
+            <div class="virtual-place" data-aos="fade-up" data-aos-delay="600">
               <ul>
-                <li class="virtual-card">
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   <figure>
                     <img src="images/place-1.png" alt="place-1" />
                   </figure>
@@ -334,7 +448,12 @@
                     <div><a href="#">Explore Location</a></div>
                   </div>
                 </li>
-                <li class="virtual-card">
+
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
                   <figure>
                     <img src="images/place-2.png" alt="place-2" />
                   </figure>
@@ -347,7 +466,12 @@
                     <div><a href="#">Explore Location</a></div>
                   </div>
                 </li>
-                <li class="virtual-card">
+
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
                   <figure>
                     <img src="images/place-3.png" alt="place-3" />
                   </figure>
@@ -361,7 +485,12 @@
                     <div><a href="#">Explore Location</a></div>
                   </div>
                 </li>
-                <li class="virtual-card">
+
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
                   <figure>
                     <img src="images/place-4.png" alt="place-4" />
                   </figure>
@@ -375,7 +504,12 @@
                     <div><a href="#">Explore Location</a></div>
                   </div>
                 </li>
-                <li class="virtual-card">
+
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                >
                   <figure>
                     <img src="images/place-5.png" alt="place-5" />
                   </figure>
@@ -389,7 +523,12 @@
                     <div><a href="#">Explore Location</a></div>
                   </div>
                 </li>
-                <li class="virtual-card">
+
+                <li
+                  class="virtual-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
                   <figure>
                     <img src="images/place-6.png" alt="place-6" />
                   </figure>
@@ -405,8 +544,14 @@
               </ul>
             </div>
 
-            <!-- bottom btn and text -->
-            <div class="virtual-place-bottom d-flex">
+            <!-- bottom button and text -->
+            <div
+              class="virtual-place-bottom d-flex"
+              data-aos="fade-up"
+              data-aos-delay="800"
+              data-aos-duration="900"
+              data-aos-easing="ease-out-cubic"
+            >
               <div class="bottom-btn">
                 <a href="#">Experience VR Tour</a>
               </div>
@@ -416,23 +561,35 @@
         </div>
       </section>
 
-      <!-- making home-->
-      <section class="making-home">
+      <!-- making home -->
+      <section class="making-home" id="making-home">
         <div class="container">
           <div class="making-home-wrapper">
-            <div class="home-content">
+            <!-- heading -->
+            <div
+              class="home-content"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               <h2>MAKING <span>MARS</span> HOME</h2>
               <p>
                 Our comprehensive plan for establishing the first permanent
                 human settlement on the Red Planet.
               </p>
             </div>
-            <div class="home-card">
+
+            <!-- cards -->
+            <div
+              class="home-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               <ul class="card-list d-flex">
-                <li class="card">
-                  <figure>
-                    <img src="images/home-1.png" alt="home-1" />
-                  </figure>
+                <li class="card" data-aos="zoom-in-up" data-aos-delay="200">
+                  <figure><img src="images/home-1.png" alt="home-1" /></figure>
                   <h3>Habitats</h3>
                   <p>
                     Modular, pressurized habitats with radiation shielding,
@@ -454,7 +611,8 @@
                     </li>
                   </ul>
                 </li>
-                <li class="card">
+
+                <li class="card" data-aos="zoom-in-up" data-aos-delay="300">
                   <figure><img src="images/home-2.png" alt="home-2" /></figure>
                   <h3>Agriculture</h3>
                   <p>
@@ -477,7 +635,8 @@
                     </li>
                   </ul>
                 </li>
-                <li class="card">
+
+                <li class="card" data-aos="zoom-in-up" data-aos-delay="400">
                   <figure><img src="images/home-3.png" alt="home-3" /></figure>
                   <h3>Energy</h3>
                   <p>
@@ -500,7 +659,8 @@
                     </li>
                   </ul>
                 </li>
-                <li class="card">
+
+                <li class="card" data-aos="zoom-in-up" data-aos-delay="500">
                   <figure><img src="images/home-4.png" alt="home-4" /></figure>
                   <h3>Transportation</h3>
                   <p>
@@ -526,13 +686,29 @@
               </ul>
             </div>
 
-            <!-- Colonization Timeline -->
-            <div class="colonization-timeline">
-              <h3 class="timeline-header">Colonization Timeline</h3>
+            <!-- colonization timeline -->
+            <div
+              class="colonization-timeline"
+              data-aos="fade-up"
+              data-aos-delay="700"
+              data-aos-duration="900"
+              data-aos-easing="ease-out-cubic"
+            >
+              <h3
+                class="timeline-header"
+                data-aos="fade-down"
+                data-aos-delay="800"
+              >
+                Colonization Timeline
+              </h3>
               <div class="colonization-timeline-list">
                 <ul>
-                  <li class="timeline-list">
-                    <h3>Phase 1: 2030-2035</h3>
+                  <li
+                    class="timeline-list"
+                    data-aos="fade-up"
+                    data-aos-delay="900"
+                  >
+                    <h3>Phase 1: 2030–2035</h3>
                     <ul class="timeline-bottom-list">
                       <li>
                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -554,8 +730,13 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="timeline-list">
-                    <h3>Phase 2: 2035-2045</h3>
+
+                  <li
+                    class="timeline-list"
+                    data-aos="fade-up"
+                    data-aos-delay="1000"
+                  >
+                    <h3>Phase 2: 2035–2045</h3>
                     <ul class="timeline-bottom-list">
                       <li>
                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -575,8 +756,13 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="timeline-list">
-                    <h3>Phase 3: 2045-2060</h3>
+
+                  <li
+                    class="timeline-list"
+                    data-aos="fade-up"
+                    data-aos-delay="1100"
+                  >
+                    <h3>Phase 3: 2045–2060</h3>
                     <ul class="timeline-bottom-list">
                       <li>
                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -604,18 +790,33 @@
       </section>
 
       <!-- join us -->
-      <section class="join-us">
+      <section class="join-us" id="join-us">
         <div class="container">
           <div class="join-us-wrapper">
-            <div class="join-us-content d-flex">
+            <!-- section header -->
+            <div
+              class="join-us-content d-flex"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-easing="ease-out-cubic"
+            >
               <h2>JOIN THE <span>MISSION</span></h2>
               <p>
                 Be part of humanity's greatest adventure as we take our first
                 steps toward becoming a multi-planetary species.
               </p>
             </div>
+
+            <!-- body -->
             <div class="join-us-body d-flex">
-              <div class="body-left">
+              <!-- left form -->
+              <div
+                class="body-left"
+                data-aos="fade-right"
+                data-aos-delay="200"
+                data-aos-duration="900"
+                data-aos-easing="ease-out-cubic"
+              >
                 <h3>Subscribe for Updates</h3>
                 <p>
                   Stay informed about the latest developments in our Mars
@@ -631,6 +832,7 @@
                     placeholder="Enter your name"
                     required
                   />
+
                   <label for="email">Email Address</label>
                   <input
                     type="email"
@@ -639,42 +841,71 @@
                     placeholder="Enter your email"
                     required
                   />
+
                   <div class="option">
-                    <div class="option-list">
+                    <div
+                      class="option-list"
+                      data-aos="zoom-in"
+                      data-aos-delay="300"
+                    >
                       <input
                         type="radio"
                         id="scienceResearch"
-                        name="scienceResearch"
+                        name="interest"
                       />
                       <label for="scienceResearch">Science & Research</label>
                     </div>
-                    <div class="option-list">
-                      <input type="radio" id="Engineering" name="Engineering" />
+                    <div
+                      class="option-list"
+                      data-aos="zoom-in"
+                      data-aos-delay="400"
+                    >
+                      <input type="radio" id="Engineering" name="interest" />
                       <label for="Engineering">Engineering</label>
                     </div>
-                    <div class="option-list">
-                      <input
-                        type="radio"
-                        id="Colonization"
-                        name="Colonization"
-                      />
+                    <div
+                      class="option-list"
+                      data-aos="zoom-in"
+                      data-aos-delay="500"
+                    >
+                      <input type="radio" id="Colonization" name="interest" />
                       <label for="Colonization">Colonization</label>
                     </div>
-                    <div class="option-list">
-                      <input type="radio" id="Education" name="Education" />
+                    <div
+                      class="option-list"
+                      data-aos="zoom-in"
+                      data-aos-delay="600"
+                    >
+                      <input type="radio" id="Education" name="interest" />
                       <label for="Education">Education</label>
                     </div>
                   </div>
 
-                  <button type="submit">Subscribe Now</button>
+                  <button
+                    type="submit"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="700"
+                    data-aos-duration="800"
+                  >
+                    Subscribe Now
+                  </button>
                 </form>
               </div>
-              <div class="body-right">
-                <div class="program">
+
+              <!-- right content -->
+              <div
+                class="body-right"
+                data-aos="fade-left"
+                data-aos-delay="300"
+                data-aos-duration="900"
+                data-aos-easing="ease-out-cubic"
+              >
+                <!-- community programs -->
+                <div class="program" data-aos="fade-up" data-aos-delay="400">
                   <h3>Community Programs</h3>
                   <div class="program-content">
                     <ul>
-                      <li>
+                      <li data-aos="zoom-in-up" data-aos-delay="500">
                         <figure>
                           <img src="images/program-1.png" alt="program-1" />
                         </figure>
@@ -687,7 +918,8 @@
                           </p>
                         </figcaption>
                       </li>
-                      <li>
+
+                      <li data-aos="zoom-in-up" data-aos-delay="600">
                         <figure>
                           <img src="images/program-2.png" alt="program-2" />
                         </figure>
@@ -700,7 +932,8 @@
                           </p>
                         </figcaption>
                       </li>
-                      <li>
+
+                      <li data-aos="zoom-in-up" data-aos-delay="700">
                         <figure>
                           <img src="images/program-3.png" alt="program-3" />
                         </figure>
@@ -716,32 +949,34 @@
                     </ul>
                   </div>
                 </div>
-                <div class="career">
+
+                <!-- career opportunities -->
+                <div class="career" data-aos="fade-up" data-aos-delay="800">
                   <h3>Career Opportunities</h3>
                   <p>
                     We're building a diverse team of experts across multiple
                     disciplines to make our Mars mission a reality.
                   </p>
                   <ul>
-                    <li>
-                      <span>Aerospace Engineers</span>
-                      <a href="#">Apply</a>
+                    <li data-aos="zoom-in-up" data-aos-delay="850">
+                      <span>Aerospace Engineers</span><a href="#">Apply</a>
                     </li>
-                    <li>
-                      <span>Life Support Specialists</span>
-                      <a href="#">Apply</a>
+                    <li data-aos="zoom-in-up" data-aos-delay="900">
+                      <span>Life Support Specialists</span><a href="#">Apply</a>
                     </li>
-                    <li>
-                      <span>Martian Geologists</span>
-                      <a href="#">Apply</a>
+                    <li data-aos="zoom-in-up" data-aos-delay="950">
+                      <span>Martian Geologists</span><a href="#">Apply</a>
                     </li>
-                    <li>
-                      <span>Habitat Architects</span>
-                      <a href="#">Apply</a>
+                    <li data-aos="zoom-in-up" data-aos-delay="1000">
+                      <span>Habitat Architects</span><a href="#">Apply</a>
                     </li>
                   </ul>
 
-                  <div class="career-btn">
+                  <div
+                    class="career-btn"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="1050"
+                  >
                     <a href="#">View All Positions</a>
                   </div>
                 </div>
@@ -828,9 +1063,18 @@
       </div>
     </footer>
 
+    <!-- scroll to top -->
+    <div class="upper-up-btn-wrapper" id="scrollBtn">
+      <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 800,
+        once: true,
+        mirror: true,
+      });
     </script>
     <script src="js/script.js"></script>
   </body>
