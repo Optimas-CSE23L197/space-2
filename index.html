@@ -46,7 +46,7 @@
 
             <!-- button -->
             <div class="nav-btn">
-              <a href="#">Start Journey</a>
+              <a href="#join-us">Start Journey</a>
             </div>
           </div>
         </div>
@@ -823,24 +823,28 @@
                   mission planning, technology breakthroughs, and opportunities
                   to get involved.
                 </p>
-                <form action="#">
-                  <label for="f_name">Full Name</label>
-                  <input
-                    type="text"
-                    id="f_name"
-                    class="f_name"
-                    placeholder="Enter your name"
-                    required
-                  />
+                <form action="#" id="subscribeForm">
+                  <div class="fullname">
+                    <label for="f_name">Full Name</label>
+                    <input
+                      type="text"
+                      id="f_name"
+                      class="f_name"
+                      placeholder="Enter your name"
+                    />
+                    <span id="nameError">Invalid name!</span>
+                  </div>
 
-                  <label for="email">Email Address</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
-                  />
+                  <div class="email">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter your email"
+                    />
+                    <span id="emailError">Invalid email!</span>
+                  </div>
 
                   <div class="option">
                     <div
@@ -879,6 +883,10 @@
                       <input type="radio" id="Education" name="interest" />
                       <label for="Education">Education</label>
                     </div>
+
+                    <span id="optionError"
+                      >Please choose a correct option!</span
+                    >
                   </div>
 
                   <button
@@ -886,10 +894,15 @@
                     data-aos="zoom-in-up"
                     data-aos-delay="700"
                     data-aos-duration="800"
+                    id="subscribe-submit"
                   >
                     Subscribe Now
                   </button>
                 </form>
+
+                <div class="success">
+                  <span id="success">Submit Successfully!</span>
+                </div>
               </div>
 
               <!-- right content -->
@@ -1010,8 +1023,8 @@
             <div class="box box-2">
               <h3>Quick Links</h3>
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Our Mission</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#timeline">Our Mission</a></li>
                 <li><a href="#">Technology</a></li>
                 <li><a href="#">Latest News</a></li>
                 <li><a href="#">Contact Us</a></li>

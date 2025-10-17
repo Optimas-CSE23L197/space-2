@@ -35,3 +35,78 @@ for (let i = 0; i < navLinks.length; i++) {
     this.classList.add("activee");
   });
 }
+
+// validate name
+function validateName(name) {
+  const namePattern = /^[A-Za-z\s'-]+$/;
+
+  if (!namePattern.test(name.trim())) {
+    return false; // if name is invalid then it return error
+  }
+  return true; // else return true
+}
+
+// validate the subscribe form
+let fullName = document.querySelector("#f_name");
+let email = document.querySelector("#email");
+let submitBtn = document.querySelector("#subscribe-submit");
+let form = document.querySelector("#subscribeForm");
+
+// error
+let nameError = document.querySelector("#nameError");
+let emailError = document.querySelector("#emailError");
+let optionError = document.querySelector("#optionError");
+let success = document.querySelector("#success");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  // Always clear old error messages
+  nameError.style.display = "none";
+  emailError.style.display = "none";
+  optionError.style.display = "none";
+  success.style.display = "none";
+
+  // catch all value
+  const nameValue = fullName.value.trim();
+  const emailValue = email.value.trim();
+  let option = document.querySelector('input[name="interest"]:checked');
+
+  if (nameValue === "") {
+    nameError.style.display = "block";
+    nameError.innerText = "Name is missing";
+    return;
+  } else if (!validateName(nameValue)) {
+    nameError.style.display = "block";
+    nameError.innerText = "Enter a valid name";
+    return;
+  } else if (nameValue.length < 3) {
+    nameError.style.display = "block";
+    nameError.innerText = "Name is too short";
+    return;
+  }
+
+  if (emailValue === "") {
+    emailError.style.display = "block";
+    emailError.innerText = "Email is missing";
+    return;
+  } else if (!emailValue.includes("@")) {
+    emailError.style.display = "block";
+    emailError.innerText = "Enter a valid email";
+    return;
+  } else if (emailValue.length < 5) {
+    emailError.style.display = "block";
+    emailError.innerText = "Email is too short";
+    return;
+  }
+
+  if (!option) {
+    optionError.style.display = "block";
+    optionError.innerText = "Chose an option";
+    return;
+  }
+
+  success.style.display = "block";
+  success.innerText = "Submit Successfully!";
+  form.submit();
+});
