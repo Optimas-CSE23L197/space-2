@@ -211,6 +211,7 @@ li {
 
 .about-wrapper .main-about-content .left-about-part figure img {
   border-radius: 100%;
+  animation: full-rotate 30s infinite ease-in;
 }
 
 .about-wrapper .main-about-content .right-about-part h3 {
