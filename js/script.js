@@ -24,3 +24,14 @@ humbarger.addEventListener("click", function () {
     icon.classList.replace("fa-xmark", "fa-bars");
   }
 });
+
+// active navigation
+let navLinks = document.querySelectorAll(".nav-menu ul li a");
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", function (e) {
+    for (let j = 0; j < navLinks.length; j++) {
+      navLinks[j].classList.remove("activee");
+    }
+    this.classList.add("activee");
+  });
+}
