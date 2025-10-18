@@ -58,6 +58,7 @@ let emailError = document.querySelector("#emailError");
 let optionError = document.querySelector("#optionError");
 let success = document.querySelector("#success");
 
+// handle form submission
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -109,4 +110,31 @@ form.addEventListener("submit", function (e) {
   success.style.display = "block";
   success.innerText = "Submit Successfully!";
   form.submit();
+});
+
+// click to top
+let scrollBtn = document.querySelector("#scrollBtn");
+
+window.addEventListener("scroll", function () {
+  // page scroll
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  // display area height
+  let windowHeight = this.window.innerHeight;
+  // total document height
+  let docHeight = this.document.documentElement.scrollHeight;
+
+  if (scrollTop + windowHeight >= docHeight - 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+});
+
+scrollBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
